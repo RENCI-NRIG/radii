@@ -17,7 +17,10 @@ Docker command to instantiate container:
 -e IRODS_PASSWORD=mypassword claris/radii-sc16`
 
 ##References##
-
+* [How to pass app configuration to Docker] (https://dantehranian.wordpress.com/2015/03/25/how-should-i-get-application-configuration-into-my-docker-containers/)
+* [Device Mapper 101] (https://docs.docker.com/engine/userguide/storagedriver/device-mapper-driver/)
+* [Docker configuration options] (https://docs.docker.com/engine/reference/commandline/dockerd/)
+* [Adjust memory and swap accounting to respect VM mem allocation] (https://docs.docker.com/engine/installation/linux/ubuntulinux/#/adjust-memory-and-swap-accounting)
 
 
 
