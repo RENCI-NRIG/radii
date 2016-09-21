@@ -8,8 +8,8 @@ Docker implementation of iRODS V4.1.7 radii-fied.
 ##Usage##
 Pass environment variables to startup script using `docker run` options.  To date (9/21/2016) two variables are required:
 
-* `IRODS_ENVIRONMENT_JSON` *must* be a URL to irods_environment json file. See [Configuration Files in iRODS](https://docs.irods.org/4.1.7/manual/configuration/)
-* `IRODS_PASSWORD` is the password for the iRODS user (default username is claris at the moment)
+* `IRODS_ENVIRONMENT_JSON` *must* be a URL to an irods_environment json file.  See [Configuration Files in iRODS](https://docs.irods.org/4.1.7/manual/configuration/)
+* `IRODS_PASSWORD` is the password for the iRODS user (default username is claris at the moment). It is used to create the irodsA file via invocation of `iinit` at boot time.
 
 Docker command to instantiate container:
 
