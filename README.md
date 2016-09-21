@@ -13,11 +13,13 @@ Pass environment variables to startup script using `docker run` options.  To dat
 
 Docker command to instantiate container:
 
-`docker run -rm -e IRODS_ENVIRONMENT_JSON=http://X.X.X.X:8080/irods/filename.json \
--e IRODS_PASSWORD=mypassword claris/radii-sc16`
+```docker run -rm -e IRODS_ENVIRONMENT_JSON=http://X.X.X.X:8080/irods/filename.json \
+-e IRODS_PASSWORD=mypassword claris/radii-sc16```
 
 #Example of irods_environment.json#
-`   {"irods_host": "observatory.data2discovery.org",
+
+```{
+    "irods_host": "observatory.data2discovery.org",
 
     "irods_port": 1247,
 
@@ -33,8 +35,9 @@ Docker command to instantiate container:
 
     "irods_server_control_plane_encryption_algorithm": "AES-256-CBC",
 
-    "irods_zone_name": "ncdsObservatory"}
-`
+    "irods_zone_name": "ncdsObservatory"
+    }```
+
 ##References##
 * [How to pass app configuration to Docker] (https://dantehranian.wordpress.com/2015/03/25/how-should-i-get-application-configuration-into-my-docker-containers/)
 * [Device Mapper 101] (https://docs.docker.com/engine/userguide/storagedriver/device-mapper-driver/)
