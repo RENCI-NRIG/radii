@@ -13,7 +13,8 @@ Pass environment variables to startup script using `docker run` options.  To dat
 
 Docker command to instantiate container:
 
-`docker run -rm -e IRODS_ENVIRONMENT_JSON=http://X.X.X.X:8080/irods/irods_environment.json -e IRODS_PASSWORD=mypassword claris/radii-sc16`
+`docker run -rm -e IRODS_ENVIRONMENT_JSON=http://X.X.X.X:8080/irods/irods_environment.json \
+-e IRODS_PASSWORD=mypassword claris/radii-sc16`
 
 ##References##
 
