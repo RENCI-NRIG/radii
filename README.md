@@ -16,6 +16,7 @@ Docker command to instantiate container:
 ```docker run -ti -e IRODS_ENVIRONMENT_JSON=http://X.X.X.X:8080/irods/filename.json \
 -e IRODS_PASSWORD=mypassword claris/radii-sc16```
 
+###Quick Test###
 Run `ils` inside the container to test that it is configured correctly.  Expected output is a list of files in the IRODS datagrid configured via the irods_environment.json file visible to user _claris_. For example:
 
 `root@b38892cc1da0:/# ils
